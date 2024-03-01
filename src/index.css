@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "burtons";
+    src: url('../public/Burtons.otf');
+  }
+
+.imgAndres{
+    width: 100%;
+    border-radius: 180px;
+}
