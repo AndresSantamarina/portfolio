@@ -97,7 +97,6 @@ function ModalContacto() {
                 type="email"
                 name="user_email"
                 placeholder="nombre@gmail.com"
-                autoFocus
                 {...register("user_email", {
                   required: "El mail es obligatorio",
                   pattern: {
