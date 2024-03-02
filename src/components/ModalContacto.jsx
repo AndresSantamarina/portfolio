@@ -62,7 +62,7 @@ function ModalContacto() {
         Contacto
       </button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title className="text-teal-600">Contactame!</Modal.Title>
         </Modal.Header>
