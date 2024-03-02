@@ -29,8 +29,8 @@ const Inicio = () => {
           </p>
         </div>
         <div className="text-6xl flex justify-center gap-16 py-2 text-gray-600 md:text-7xl">
-            <a href="https://github.com/AndresSantamarina" target="_blank">  <AiFillGithub /></a>
-            <a href="https://www.linkedin.com/in/andrés-eduardo-santamarina" target="_blank"><AiFillLinkedin /></a>
+            <a href="https://github.com/AndresSantamarina" target="_blank" className="dark:text-white">  <AiFillGithub /></a>
+            <a href="https://www.linkedin.com/in/andrés-eduardo-santamarina" target="_blank" className="dark:text-white"><AiFillLinkedin /></a>
         
           
         </div>

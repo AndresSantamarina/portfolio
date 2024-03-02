@@ -16,7 +16,7 @@ const BarraNav = ({ setModo, modo }) => {
         <li>
           <a
             href="#"
-            className="bg-gradient-to-r from-cyan-700 to-teal-500 text-white px-4 mx-2 py-2 rounded-md md:mx-5"
+            className="bg-gradient-to-r from-cyan-700 to-teal-400 text-white px-4 mx-2 py-2 rounded-md md:mx-5 hover:bg-sky-950"
           >
             Contacto
           </a>
