@@ -28,7 +28,7 @@ const Inicio = () => {
             excepcionales.
           </p>
         </div>
-        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+        <div className="text-6xl flex justify-center gap-16 py-2 text-gray-600 md:text-7xl">
           <AiFillGithub />
           <AiFillLinkedin />
         </div>
@@ -38,7 +38,7 @@ const Inicio = () => {
       </section>
       <section>
         <div>
-          <h3 className="text-center text-3xl py-1  dark:text-white">Mis habilidades</h3>
+          <h3 className="text-center text-3xl py-4  dark:text-white">Mis habilidades</h3>
           <p className="text-center text-md py-2 leading-8 md:text-xl max-w-xl mx-auto text-gray-800  dark:text-white">
             Tengo experiencia en el desarrollo web utilizando tecnologías como <span className="text-teal-500">HTML5</span>, <span className="text-teal-500">CSS</span>, <span className="text-teal-500">JavaScript</span>, <span className="text-teal-500">ReactJS</span>, <span className="text-teal-500">NodeJS</span>, <span className="text-teal-500">ExpressJS</span> y <span className="text-teal-500">MongoDB</span>.
           </p>
