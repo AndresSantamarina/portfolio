@@ -1,8 +1,4 @@
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import imgAndres from "../../public/imgAndres.png";
 import design from "../../public/design.png";
 import web1 from "../../public/web1.png";
@@ -13,29 +9,28 @@ import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
 import { Image } from "react-bootstrap";
 
-
 const Inicio = () => {
   return (
     <>
       <section>
-        <div className="text-center p-10">
+        <div className="text-center px-6 py-10 md:p-10">
           <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
             Andrés Santamarina
           </h2>
           <h3 className="text-2xl py-2 md:text-3xl  dark:text-white">
-            Developer and designer.
+            Full Stack Web Developer
           </h3>
           <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto  dark:text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            recusandae nemo quas vero, facilis at officia esse, reprehenderit
-            inventore laudantium voluptas autem libero dolores? Quas officiis
-            obcaecati velit non quibusdam!
+            Hola, soy Andrés, un apasionado desarrollador Full Stack con una
+            sólida experiencia en la creación de soluciones web completas y
+            eficientes. Mi enfoque se centra en la combinación de habilidades
+            front-end y back-end para ofrecer experiencias de usuario
+            excepcionales.
           </p>
         </div>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-          <AiFillTwitterCircle />
+          <AiFillGithub />
           <AiFillLinkedin />
-          <AiFillYoutube />
         </div>
         <div className="realtive mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 md:h-96 md:w-96">
           <Image src={imgAndres} fluid className="imgAndres" />
@@ -43,12 +38,9 @@ const Inicio = () => {
       </section>
       <section>
         <div>
-          <h3 className="text-3xl py-1  dark:text-white">Services I offer</h3>
-          <p className="text-md py-2 leading-8 text-gray-800  dark:text-white">
-            Lorem ipsum dolor sit amet consectetur,
-            <span className="text-teal-500">adipisicing</span> elit. Voluptates
-            nesciunt accusamus dolores cumque eaque ipsa impedit eveniet autem
-            odio ducimus?
+          <h3 className="text-center text-3xl py-1  dark:text-white">Mis habilidades</h3>
+          <p className="text-center text-md py-2 leading-8 md:text-xl max-w-xl mx-auto text-gray-800  dark:text-white">
+            Tengo experiencia en el desarrollo web utilizando tecnologías como <span className="text-teal-500">HTML5</span>, <span className="text-teal-500">CSS</span>, <span className="text-teal-500">JavaScript</span>, <span className="text-teal-500">ReactJS</span>, <span className="text-teal-500">NodeJS</span>, <span className="text-teal-500">ExpressJS</span> y <span className="text-teal-500">MongoDB</span>.
           </p>
         </div>
         <div className="lg:flex gap-10">
