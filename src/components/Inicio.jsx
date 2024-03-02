@@ -1,5 +1,9 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import imgAndres from "../../public/imgAndres.png";
+import { Image } from "react-bootstrap";
+import petshop from "../../public/petShop.png";
+import parrillada from "../../public/parrillada.png";
+import bank from "../../public/bank.png";
 import design from "../../public/design.png";
 import web1 from "../../public/web1.png";
 import web2 from "../../public/web2.png";
@@ -7,10 +11,6 @@ import web3 from "../../public/web3.png";
 import web4 from "../../public/web4.png";
 import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
-import { Image } from "react-bootstrap";
-import petshop from "../../public/petShop.png";
-import parrillada from "../../public/parrillada.png";
-import bank from "../../public/bank.png";
 
 const Inicio = () => {
   return (
@@ -52,92 +52,91 @@ const Inicio = () => {
           <Image src={imgAndres} fluid className="imgAndres" />
         </div>
       </section>
-      <section>
-        <div className="py-5">
-          <h3 className="text-center text-3xl py-4 text-teal-600">
-            Mis habilidades
-          </h3>
-          <p className="text-center text-md py-2 leading-8 md:text-xl max-w-xl mx-auto text-gray-800  dark:text-white">
-            Tengo experiencia en el desarrollo web utilizando tecnologías como{" "}
-            <span className="text-teal-500">HTML5</span>,{" "}
-            <span className="text-teal-500">CSS</span>,{" "}
-            <span className="text-teal-500">JavaScript</span>,{" "}
-            <span className="text-teal-500">ReactJS</span>,{" "}
-            <span className="text-teal-500">NodeJS</span>,{" "}
-            <span className="text-teal-500">ExpressJS</span> y{" "}
-            <span className="text-teal-500">MongoDB</span>.
+
+      <div className="py-5">
+        <h3 className="text-center text-3xl py-4 text-teal-600">
+          Mis habilidades
+        </h3>
+        <p className="text-center text-md py-2 leading-8 md:text-xl max-w-xl mx-auto text-gray-800  dark:text-white">
+          Tengo experiencia en el desarrollo web utilizando tecnologías como{" "}
+          <span className="text-teal-500">HTML5</span>,{" "}
+          <span className="text-teal-500">CSS</span>,{" "}
+          <span className="text-teal-500">JavaScript</span>,{" "}
+          <span className="text-teal-500">ReactJS</span>,{" "}
+          <span className="text-teal-500">NodeJS</span>,{" "}
+          <span className="text-teal-500">ExpressJS</span> y{" "}
+          <span className="text-teal-500">MongoDB</span>.
+        </p>
+      </div>
+
+      <h3 className="text-3xl py-1 text-teal-600 text-center pt-5">
+        Portfolio
+      </h3>
+      <div className="lg:flex gap-10 py-10">
+        <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+          <a href="https://estilo-bigotes.netlify.app/" target="_blank">
+            <img src={petshop} alt="Petshop" className="pb-4 img-fluid" />
+          </a>
+          <a
+            href="https://estilo-bigotes.netlify.app/"
+            target="_blank"
+            className="text-lg font-medium pt-8 pb-2  dark:text-white"
+          >
+            Estilo Bigotes - PetShop
+          </a>
+          <p className="py-2  dark:text-white">
+            Esta es una página web sobre un PetShop para mascotas. Se puede
+            navegar entre las distintas categorías, ver los productos
+            disponibles y la información del equipo.
           </p>
+          <h4 className="py-4 text-teal-600">Herramientas de trabajo:</h4>
+          <p className="text-gray-800 py-1  dark:text-white">HTML5</p>
+          <p className="text-gray-800 py-1  dark:text-white">CSS</p>
         </div>
-        <h3 className="text-3xl py-1 text-teal-600 text-center pt-5">Portfolio</h3>
-        <div className="lg:flex gap-10 py-10">
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
-            <a href="https://estilo-bigotes.netlify.app/" target="_blank">
-              <img src={petshop} alt="Petshop" className="pb-4"/>
-            </a>
-            <a
-              href="https://estilo-bigotes.netlify.app/"
-              target="_blank"
-              className="text-lg font-medium pt-8 pb-2  dark:text-white"
-            >
-              Estilo Bigotes - PetShop
-            </a>
-            <p className="py-2  dark:text-white">
-              Esta es una página web sobre un PetShop para mascotas. Se puede
-              navegar entre las distintas categorías, ver los productos
-              disponibles y la información del equipo.
-            </p>
-            <h4 className="py-4 text-teal-600">Herramientas de trabajo:</h4>
-            <p className="text-gray-800 py-1  dark:text-white">HTML5</p>
-            <p className="text-gray-800 py-1  dark:text-white">CSS</p>
-          </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
-            <a
-              href="https://parrillada-santamarina.netlify.app/"
-              target="_blank"
-            >
-              {" "}
-              <img src={parrillada} alt="Parrillada" className="pb-4" />
-            </a>
-            <a
-              href="https://parrillada-santamarina.netlify.app/"
-              target="_blank"
-              className="text-lg font-medium pt-8 pb-2  dark:text-white"
-            >
-              Parrillada
-            </a>
-            <p className="py-2  dark:text-white">
-              Esta página web es una Single Page Application, que trata sobre
-              una Parrillada, en la que se puede observar información sobre los
-              distintos servicios, el menú y los chefs.
-            </p>
-            <h4 className="py-4 text-teal-600">Herramientas de trabajo:</h4>
-            <p className="text-gray-800 py-1  dark:text-white">HTML5</p>
-            <p className="text-gray-800 py-1  dark:text-white">CSS</p>
-          </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
-            <a href="https://rolling-bank-grupo-5.netlify.app/" target="_blank">
-              {" "}
-              <img src={bank} alt="Banco virtual" className="pb-4"/>
-            </a>
-            <a
-              href="https://rolling-bank-grupo-5.netlify.app/"
-              target="_blank"
-              className="text-lg font-medium pt-8 pb-2  dark:text-white"
-            >
-              Rolling Bank
-            </a>
-            <p className="py-2  dark:text-white">
-              Esta página web trata sobre un banco virtual, en donde se puede
-              navegar en las distintas opciones de la barra de navegación, para
-              observar la información sobre precios, seguridad, etc.
-            </p>
-            <h4 className="py-4 text-teal-600">Herramientas de trabajo:</h4>
-            <p className="text-gray-800 py-1  dark:text-white">HTML5</p>
-            <p className="text-gray-800 py-1  dark:text-white">CSS</p>
-            <p className="text-gray-800 py-1  dark:text-white">Bootsrap</p>
-          </div>
+        <div className="text-center shadow-lg p-10 rounded-xl my-10">
+          <a href="https://parrillada-santamarina.netlify.app/" target="_blank">
+            {" "}
+            <img src={parrillada} alt="Parrillada" className="pb-4 img-fluid" />
+          </a>
+          <a
+            href="https://parrillada-santamarina.netlify.app/"
+            target="_blank"
+            className="text-lg font-medium pt-8 pb-2  dark:text-white"
+          >
+            Parrillada
+          </a>
+          <p className="py-2  dark:text-white">
+            Esta página web es una Single Page Application, que trata sobre una
+            Parrillada, en la que se puede observar información sobre los
+            distintos servicios, el menú y los chefs.
+          </p>
+          <h4 className="py-4 text-teal-600">Herramientas de trabajo:</h4>
+          <p className="text-gray-800 py-1  dark:text-white">HTML5</p>
+          <p className="text-gray-800 py-1  dark:text-white">CSS</p>
         </div>
-      </section>
+        <div className="text-center shadow-lg p-10 rounded-xl my-10">
+          <a href="https://rolling-bank-grupo-5.netlify.app/" target="_blank">
+            {" "}
+            <img src={bank} alt="Banco virtual" className="pb-4 img-fluid" />
+          </a>
+          <a
+            href="https://rolling-bank-grupo-5.netlify.app/"
+            target="_blank"
+            className="text-lg font-medium pt-8 pb-2  dark:text-white"
+          >
+            Rolling Bank
+          </a>
+          <p className="py-2  dark:text-white">
+            Esta página web trata sobre un banco virtual, en donde se puede
+            navegar en las distintas opciones de la barra de navegación, para
+            observar la información sobre precios, seguridad, etc.
+          </p>
+          <h4 className="py-4 text-teal-600">Herramientas de trabajo:</h4>
+          <p className="text-gray-800 py-1  dark:text-white">HTML5</p>
+          <p className="text-gray-800 py-1  dark:text-white">CSS</p>
+          <p className="text-gray-800 py-1  dark:text-white">Bootsrap</p>
+        </div>
+      </div>
     </>
   );
 };
