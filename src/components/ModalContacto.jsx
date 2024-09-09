@@ -10,30 +10,23 @@ function ModalContacto() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   const servicio = import.meta.env.VITE_SERVICE_KEY;
   const template = import.meta.env.VITE_TEMPLATE_KEY;
   const publicKey = import.meta.env.VITE_PUBLIC_KEY;
-
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
   } = useForm();
-
   const form = useRef();
-
   const sendEmail = () => {
-
     emailjs
       .sendForm(servicio, template, form.current, {
         publicKey: publicKey,
       })
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("SUCCESS!");
           Swal.fire({
             title: "Mensaje enviado!",
             text: `El email fue enviado correctamente`,
@@ -43,7 +36,6 @@ function ModalContacto() {
           reset();
         },
         (error) => {
-          console.log("FAILED...", error.text);
           Swal.fire({
             title: "Ocurrió un error",
             text: `El email no pudo ser enviado, intente esta operación en unos minutos.`,
@@ -56,18 +48,21 @@ function ModalContacto() {
   return (
     <>
       <button
-        className="bg-gradient-to-r from-cyan-700 to-teal-400 text-white px-4 mx-2 py-2 rounded-md md:mx-5"
+        className="bg-gradient-to-r from-cyan-700 to-teal-400 text-white px-4 mx-2 py-2 rounded-md md:mx-5 btnContacto"
         onClick={handleShow}
       >
         Contacto
       </button>
-
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title className="text-teal-600">Contactame!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form ref={form} onSubmit={handleSubmit(sendEmail)}>
+          <Form
+            ref={form}
+            onSubmit={handleSubmit(sendEmail)}
+            className="formContacto"
+          >
             <Form.Group className="mb-3" controlId="nombreInput">
               <Form.Label>Ingresa tu nombre</Form.Label>
               <Form.Control
@@ -122,8 +117,8 @@ function ModalContacto() {
                     message: "El mensaje debe tener como mínimo 5 caracteres",
                   },
                   maxLength: {
-                    value: 500,
-                    message: "El mensaje debe tener como máximo 500 caracteres",
+                    value: 200,
+                    message: "El mensaje debe tener como máximo 200 caracteres",
                   },
                 })}
               />

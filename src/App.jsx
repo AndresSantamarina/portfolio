@@ -11,7 +11,7 @@ function App() {
   return (
     <div className={modo ? "dark" : ""}>
       <BarraNav setModo={setModo} modo={modo} />
-      <section className="px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <section className="px-10 md:px-20 lg:px-40 dark:bg-gray-900 mainSection">
         <Inicio />
       </section>
       <Footer />
