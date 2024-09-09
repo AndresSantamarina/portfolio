@@ -22,11 +22,12 @@ function ModalContacto() {
   const form = useRef();
   const sendEmail = () => {
     emailjs
-      .sendForm(servicio, template, form.current, {
-        publicKey: publicKey,
-      })
+      .sendForm(servicio, template, form.current,{
+        publicKey: publicKey
+      } 
+      )
       .then(
-        (result) => {
+        () => {
           Swal.fire({
             title: "Mensaje enviado!",
             text: `El email fue enviado correctamente`,
@@ -130,7 +131,7 @@ function ModalContacto() {
               className="bg-teal-500 hover:bg-teal-600 px-4 mx-2 py-2 rounded-md md:mx-5 text-white"
               type="submit"
               value="Send"
-              onClick={handleSubmit(sendEmail)}
+              // onClick={handleSubmit(sendEmail)}
             >
               Enviar
             </button>
