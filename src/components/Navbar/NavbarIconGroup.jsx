@@ -1,7 +1,7 @@
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
-import ModalContacto from "../ModalContacto";
+import ContactButton from "../Contact/ContactButton";
 
 const NavbarIconGroup = ({
   modo,
@@ -16,7 +16,7 @@ const NavbarIconGroup = ({
         isMobile ? "justify-around w-full py-3" : "gap-4"
       }`}
     >
-      <ModalContacto
+      <ContactButton
         asIcon
         icon={
           <MdOutlineEmail className="text-xl text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors" />

@@ -5,8 +5,11 @@ export const useScrollSection = (sections = []) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const navHeight = document.documentElement.style.scrollPaddingTop?.replace("px", "") || 0;
-      const scrollPosition = window.scrollY + parseInt(navHeight);
+      const scrollPadding = parseInt(
+        getComputedStyle(document.documentElement).scrollPaddingTop
+      ) || 0;
+
+      const scrollPosition = window.scrollY + scrollPadding;
 
       for (const section of sections) {
         const el = document.getElementById(section);
@@ -19,6 +22,8 @@ export const useScrollSection = (sections = []) => {
         }
       }
     };
+
+    handleScroll(); // ejecutar una vez al inicio
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

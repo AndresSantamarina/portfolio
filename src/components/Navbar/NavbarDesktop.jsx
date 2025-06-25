@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { IoLanguage } from "react-icons/io5";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import ModalContacto from "../ModalContacto";
 import { MdOutlineEmail } from "react-icons/md";
+import ContactButton from "../Contact/ContactButton";
 
 const navVariants = {
   hidden: { opacity: 1, y: -20 },
@@ -63,7 +63,7 @@ const NavbarDesktop = ({
       ))}
 
       <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <ModalContacto
+        <ContactButton
           asIcon
           icon={
             <span className="text-2xl">
