@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { IoLanguage } from "react-icons/io5";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import ContactButton from "../Contact/ContactButton";
 import { IoMdMail } from "react-icons/io";
@@ -16,8 +15,6 @@ const NavbarDesktop = ({
   navRef,
   modo,
   setModo,
-  language,
-  setLanguage,
   showSettings,
   setShowSettings,
 }) => {
@@ -84,48 +81,6 @@ const NavbarDesktop = ({
             <BsFillMoonStarsFill className="text-xl" />
           )}
         </button>
-      </motion.li>
-
-      <motion.li
-        className="relative"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <button
-          onClick={() => setShowSettings(!showSettings)}
-          className="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-        >
-          <IoLanguage className="text-xl" />
-        </button>
-
-        <AnimatePresence>
-          {showSettings && (
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={navVariants}
-              className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 z-50"
-            >
-              {["es", "en"].map((lang) => (
-                <button
-                  key={lang}
-                  onClick={() => {
-                    setLanguage(lang);
-                    setShowSettings(false);
-                  }}
-                  className={`block w-full text-left px-4 py-2 text-sm ${
-                    language === lang
-                      ? "bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200"
-                      : "text-gray-700 dark:text-gray-300 hover:bg-teal-50 dark:hover:bg-gray-700"
-                  } transition-colors`}
-                >
-                  {lang === "es" ? "Español" : "English"}
-                </button>
-              ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
       </motion.li>
     </ul>
   );

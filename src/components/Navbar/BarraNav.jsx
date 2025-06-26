@@ -4,7 +4,7 @@ import NavbarDesktop from "./NavbarDesktop";
 import { useScrollSection } from "./useScrollSection";
 import NavbarMobile from "./NavbarMobile";
 
-const BarraNav = ({ setModo, modo, setLanguage, language }) => {
+const BarraNav = ({ setModo, modo }) => {
   const [showSettings, setShowSettings] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navRef = useRef(null);
@@ -61,8 +61,6 @@ const BarraNav = ({ setModo, modo, setLanguage, language }) => {
         navRef={navRef}
         modo={modo}
         setModo={setModo}
-        language={language}
-        setLanguage={setLanguage}
         showSettings={showSettings}
         setShowSettings={setShowSettings}
       />
@@ -75,8 +73,6 @@ const BarraNav = ({ setModo, modo, setLanguage, language }) => {
         setActiveSection={setActiveSection}
         modo={modo}
         setModo={setModo}
-        language={language}
-        setLanguage={setLanguage}
         navRef={navRef}
       />
     </motion.nav>

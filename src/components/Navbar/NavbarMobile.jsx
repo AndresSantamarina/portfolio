@@ -15,8 +15,6 @@ const NavbarMobile = ({
   activeSection,
   modo,
   setModo,
-  language,
-  setLanguage,
   navRef,
 }) => {
   const handleLinkClick = (itemId) => {
@@ -77,13 +75,7 @@ const NavbarMobile = ({
               ))}
 
               <li className="border-t border-gray-200 dark:border-gray-700">
-                <NavbarIconGroup
-                  isMobile
-                  modo={modo}
-                  setModo={setModo}
-                  language={language}
-                  setLanguage={setLanguage}
-                />
+                <NavbarIconGroup isMobile modo={modo} setModo={setModo} />
               </li>
             </ul>
           </motion.div>

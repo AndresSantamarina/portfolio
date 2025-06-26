@@ -7,16 +7,10 @@ import Home from "./components/Home/Home";
 
 function App() {
   const [modo, setModo] = useState(false);
-  const [language, setLanguage] = useState("es"); // 'es' o 'en'
 
   return (
     <div className={modo ? "dark" : ""}>
-      <BarraNav
-        setModo={setModo}
-        modo={modo}
-        setLanguage={setLanguage}
-        language={language}
-      />
+      <BarraNav setModo={setModo} modo={modo} />
       <section className="px-10 md:px-20 lg:px-40 dark:bg-gray-900 mainSection">
         <Home />
       </section>
