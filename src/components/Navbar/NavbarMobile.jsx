@@ -13,7 +13,6 @@ const NavbarMobile = ({
   setMobileMenuOpen,
   navItems,
   activeSection,
-  setActiveSection,
   modo,
   setModo,
   language,
@@ -25,10 +24,9 @@ const NavbarMobile = ({
     if (el) {
       const navHeight = navRef.current?.offsetHeight || 0;
       const top =
-        el.getBoundingClientRect().top + window.pageYOffset - navHeight;
+        el.getBoundingClientRect().top + window.pageYOffset - navHeight - 5;
       window.scrollTo({ top, behavior: "smooth" });
-      setTimeout(() => setMobileMenuOpen(false), 400);
-      setActiveSection(itemId);
+      setTimeout(() => setMobileMenuOpen(false), 700);
     }
   };
 

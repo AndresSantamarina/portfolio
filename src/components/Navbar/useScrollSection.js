@@ -5,29 +5,38 @@ export const useScrollSection = (sections = []) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPadding = parseInt(
-        getComputedStyle(document.documentElement).scrollPaddingTop
-      ) || 0;
-
-      const scrollPosition = window.scrollY + scrollPadding;
+      let found = false;
 
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
-          const { offsetTop, offsetHeight } = el;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
+          const rect = el.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+
+          const isVisible =
+            rect.top <= viewportHeight * 0.4 && rect.bottom >= viewportHeight * 0.4;
+
+          if (isVisible) {
+            if (activeSection !== section) {
+              setActiveSection(section);
+            }
+            found = true;
             break;
           }
         }
       }
+
+      if (!found && sections.length > 0) {
+        const lastSection = sections[sections.length - 1];
+        setActiveSection(lastSection);
+      }
     };
 
-    handleScroll(); // ejecutar una vez al inicio
+    handleScroll();
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [sections]);
+  }, [sections, activeSection]);
 
   return [activeSection, setActiveSection];
 };
