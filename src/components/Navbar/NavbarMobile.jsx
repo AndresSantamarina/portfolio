@@ -1,6 +1,7 @@
-import { FiMenu, FiX } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import NavbarIconGroup from "./NavbarIconGroup";
+import { TiThMenu } from "react-icons/ti";
+import { IoMdCloseCircle } from "react-icons/io";
 
 const mobileMenuVariants = {
   hidden: { opacity: 0, height: 0 },
@@ -39,9 +40,9 @@ const NavbarMobile = ({
         aria-label="Abrir menú"
       >
         {mobileMenuOpen ? (
-          <FiX className="text-xl" />
+          <IoMdCloseCircle className="text-xl" />
         ) : (
-          <FiMenu className="text-xl" />
+          <TiThMenu className="text-xl" />
         )}
       </button>
 

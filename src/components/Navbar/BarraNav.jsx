@@ -10,6 +10,7 @@ const BarraNav = ({ setModo, modo, setLanguage, language }) => {
   const navRef = useRef(null);
   const navItems = [
     { id: "inicio", label: "Inicio" },
+    { id: "experiencia", label: "Experiencia" },
     { id: "habilidades", label: "Habilidades" },
     { id: "proyectos", label: "Proyectos" },
   ];

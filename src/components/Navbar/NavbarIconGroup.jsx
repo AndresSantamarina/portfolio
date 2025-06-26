@@ -1,7 +1,7 @@
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
-import { MdOutlineEmail } from "react-icons/md";
 import ContactButton from "../Contact/ContactButton";
+import { IoMdMail } from "react-icons/io";
 
 const NavbarIconGroup = ({
   modo,
@@ -19,7 +19,7 @@ const NavbarIconGroup = ({
       <ContactButton
         asIcon
         icon={
-          <MdOutlineEmail className="text-xl text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors" />
+          <IoMdMail className="text-xl text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors" />
         }
       />
       <button

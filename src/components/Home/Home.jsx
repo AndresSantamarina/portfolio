@@ -1,3 +1,4 @@
+import ExperienceSection from "./ExperienceSection";
 import InfoSection from "./InfoSection";
 import ProjectsSection from "./ProjectsSection";
 import SkillsSection from "./SkillsSection";
@@ -5,7 +6,8 @@ import SkillsSection from "./SkillsSection";
 const Home = () => {
   return (
     <>
-      <InfoSection/>
+      <InfoSection />
+      <ExperienceSection />
       <SkillsSection />
       <ProjectsSection />
     </>

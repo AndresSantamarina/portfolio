@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { IoLanguage } from "react-icons/io5";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { MdOutlineEmail } from "react-icons/md";
 import ContactButton from "../Contact/ContactButton";
+import { IoMdMail } from "react-icons/io";
 
 const navVariants = {
   hidden: { opacity: 1, y: -20 },
@@ -67,7 +67,7 @@ const NavbarDesktop = ({
           asIcon
           icon={
             <span className="text-2xl">
-              <MdOutlineEmail />
+              <IoMdMail />
             </span>
           }
         />

@@ -5,7 +5,9 @@ const ContactModal = ({ show, onClose }) => {
   return (
     <Modal show={show} onHide={onClose} centered>
       <Modal.Header closeButton>
-        <Modal.Title className="text-teal-600">Contactame!</Modal.Title>
+        <Modal.Title className="text-teal-600">
+          Contactame vía Email
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <ContactForm onCancel={onClose} />

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import ContactModal from "./ContactModal";
-import { MdOutlineEmail } from "react-icons/md";
+import { IoMdMail } from "react-icons/io";
 
 const ContactButton = ({
   asIcon = false,
-  icon = <MdOutlineEmail className="text-2xl" />,
+  icon = <IoMdMail className="text-2xl" />,
   label = "Contacto",
   className = "",
 }) => {
@@ -21,7 +21,6 @@ const ContactButton = ({
       >
         {asIcon ? icon : label}
       </button>
-
       <ContactModal show={showModal} onClose={() => setShowModal(false)} />
     </>
   );

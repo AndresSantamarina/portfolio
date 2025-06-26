@@ -10,6 +10,9 @@
   width: 100%;
   border-radius: 180px;
 }
+.imgCertificado {
+  border-radius: 20px;
+}
 .mainSection {
   font-family: "Roboto", sans-serif;
 }
