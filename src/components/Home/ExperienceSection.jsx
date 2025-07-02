@@ -20,7 +20,7 @@ const ExperienceSection = () => {
         </p>
         <p className="text-center text-md py-3 leading-8 md:text-xl max-w-xl mx-auto text-gray-800 dark:text-white">
           {" "}
-          Tuve la suerte de ser becado dos veces por el instituo{" "}
+          Tuve la suerte de ser becado dos veces por el instituto{" "}
           <a href="https://rollingcode.co/" target="_blank">
             {" "}
             <span className="text-teal-500"> RollingCode</span>
@@ -51,7 +51,7 @@ const ExperienceSection = () => {
         </p>
 
         <p className="text-center text-md py-3 leading-8 md:text-xl max-w-xl mx-auto text-gray-800 dark:text-white">
-          Actualmente me sigo formando como profesional en la StartUp{" "}
+          Actualmente me sigo formando como profesional en la startup{" "}
           <a
             href="https://www.linkedin.com/company/cybersinn-solutions"
             target="_blank"
