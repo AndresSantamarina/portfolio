@@ -9,7 +9,9 @@ import domesticapp from "../../assets/img/domesticapp.png";
 import parrillada from "../../assets/img/parrillada.png";
 import bank from "../../assets/img/bank.png";
 import sugar from "../../assets/img/sugarrush.jpeg";
+import formbuilder from "../../assets/img/formbuilder.png";
 import {
+  FaAngular,
   FaBootstrap,
   FaCss3,
   FaHtml5,
@@ -151,6 +153,20 @@ const ProjectsSection = () => {
         <SiMongodb key="mongo" />,
         <FaNodeJs key="node" />,
         <SiRedux key="redux" />,
+        <SiTypescript key="ts" />,
+        <SiTailwindcss key="tailwind" />,
+      ],
+    },
+    {
+      title: "Form Builder",
+      description:
+        "FormBuilder es una aplicación web que permite a los usuarios crear formularios personalizados de manera visual, arrastrando y soltando distintos tipos de campos como text inputs, checkboxes, y más. También es posible previsualizar el formulario, editar los campos y configurar sus propiedades.",
+      image: formbuilder,
+      link: "https://form-builder-andres.netlify.app/",
+      tools: [
+        <FaHtml5 key="html" />,
+        <FaCss3 key="css" />,
+        <FaAngular key="angular" />,
         <SiTypescript key="ts" />,
         <SiTailwindcss key="tailwind" />,
       ],

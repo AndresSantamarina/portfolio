@@ -5,14 +5,13 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaSass,
-  FaJs,
   FaBootstrap,
   FaPalette,
+  FaAngular,
 } from "react-icons/fa";
 import { RiBearSmileFill } from "react-icons/ri";
 import {
   SiTailwindcss,
-  SiTypescript,
   SiMongodb,
   SiFirebase,
   SiRedux,
@@ -27,9 +26,8 @@ const techStack = [
       { name: "HTML5", icon: <FaHtml5 /> },
       { name: "CSS3", icon: <FaCss3Alt /> },
       { name: "SCSS", icon: <FaSass /> },
-      { name: "JavaScript", icon: <FaJs /> },
-      { name: "TypeScript", icon: <SiTypescript /> },
       { name: "ReactJS", icon: <FaReact /> },
+      { name: "Angular", icon: <FaAngular /> },
       { name: "Tailwind", icon: <SiTailwindcss /> },
       { name: "Bootstrap", icon: <FaBootstrap /> },
       { name: "Material UI", icon: <FaPalette /> },
